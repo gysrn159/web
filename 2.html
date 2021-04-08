@@ -1,22 +1,56 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
 <title>5주차 리포트</title>
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="bootstrap-3.3.2/dist/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">Javascript</a></li>
-</ol>
 
-<h2 id="css란">
-  <a href="#css란">CSS란 무엇인가?</a>
-</h2>
-<p>
-<a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics#%EA%B7%B8%EB%9E%98%EC%84%9C_css%EA%B0%80_%EB%AD%94%EA%B0%80%EC%9A%94" target="_blank" title="HTTML 5.2 specification">Cascading Style Sheets</a>의 줄임말. HTML와 같이 CSS는 실제로 프로그래밍 언어는 아닙니다. 마크업(markup) 언어도 아닙니다. Style sheet 언어 입니다. HTML 문서에 있는 요소들에 선택적으로 스타일을 적용할 수 있다는 말입니다. 예를 들면, HTML 페이지에서 모든 문단 요소들을 선택하고 그 문단 요소들 안에 있는 텍스트를 빨갛게 바꾸려고 한다면 다음과 같이 CSS를 작성할 것입니다.
-</p>
+<body>
+ <div class="container">
+  <p>
+  <div class="row">
+   <div class="col-md-4">
+    <h1><a href="index.html">WEB</a></h1>
+   </div>
+  </div> <!-- row end-->
+  </p>
+  <div class="row row-offcanvas row-offcanvas-right">
+   <div class="col-md-2 sidebar-offcanvas" id="sidebar">
+    <div class="list-group">
+     <a href="1.html" class="list-group-item">HTML</a>
+     <a href="2.html" class="list-group-item active">CSS</a>
+     <a href="3.html" class="list-group-item">Javascript</a>
+     <a href="4.html" class="list-group-item">jQuery</a>
+     <a href="5.html" class="list-group-item">Bootstrap</a>
+    </div>
+   </div><!--/.sidebar-offcanvas-->
+   <div class="col-md-10">
+   <h2>CSS란 무엇인가?</h2>
+   <p>
+   <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics#%EA%B7%B8%EB%9E%98%EC%84%9C_css%EA%B0%80_%EB%AD%94%EA%B0%80%EC%9A%94" target="_blank" title="CSS specification">Cascading Style Sheets</a>의 줄임말.
+   <ul>
+    <li>태그(tag) : </li>
+    <ul>
+      <li>종류</li>
+    </ul>
+   </ul>
+   </p>
+   </div>
+  </div>
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+
+ <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ <script src="bootstrap-3.3.2/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+ <script src="offcanvas.js"></script>
 </body>
 </html>
