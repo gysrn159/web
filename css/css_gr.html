@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>5주차 리포트</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap.min.css">
-<!-- 부가적인 테마 -->
-<link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
-<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-<script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+ <title>5주차 리포트</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
+ <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <!-- Static navbar -->
-  <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">5 weeks Report</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../html5/1.html">HTML5</a></li>
-          <li class="active"><a href="../css/2.html">CSS</a></li>
-          <li><a href="../javascript/3.html">Javascript</a></li>
-          <li><a href="../jquery/4.html">jQuery</a></li>
-          <li><a href="../bootstrap/5.html">Bootstrap</a></li>
-        </ul>
-        <form class="navbar-form navbar-right">
-          <a type="button" class="btn btn-success" href="../login.html">로그인</a>
-          <a type="button" class="btn btn-default" href="../signup.html">회원가입</a>
-        </form>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
-
+ <!-- 상단 네비게이션 바 -->
+ <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html">5 weeks Report</a>
+   </div>
+   <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="../html5/h_home.html">HTML5</a></li>
+     <li class="active"><a href="../css/c_home.html">CSS</a></li>
+     <li><a href="../javascript/js_home.html">Javascript</a></li>
+     <li><a href="../jquery/jq_home.html">jQuery</a></li>
+     <li><a href="../bootstrap/bs_home.html">Bootstrap</a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+     <a type="button" class="btn btn-success" href="../login.html">로그인</a>
+     <a type="button" class="btn btn-default" href="../signup.html">회원가입</a>
+    </form>
+   </div> <!-- navbar end -->
+  </div> <!-- container end -->
+ </nav> <!-- 네비게이션 바 end -->
+ <!-- main page -->
  <div class="container">
   <div class="row row-offcanvas row-offcanvas-right">
-    <div class="col-sm-3 col-md-2 sidebar">
-      <div class="list-group">
-       <a href="2.html" class="list-group-item">CSS 소개</a>
-       <a href="css_gr.html" class="list-group-item active">CSS 문법</a>
-      </div>
-    </div><!--/.sidebar-offcanvas-->
+   <div class="col-sm-3 col-md-2 sidebar">
+    <div class="list-group">
+     <a href="c_home.html" class="list-group-item">CSS 소개</a>
+     <a href="css_gr.html" class="list-group-item active">CSS 문법</a>
+    </div>
+   </div> <!-- 사이드바 end -->
    <div class="col-sm-9 col-md-10">
-   <h2>CSS 문법</h2>
-   <p>
-    <p>CSS는 단순한 문법을 가지며, 수많은 영어 키워드를 사용하여 다양한 스타일의 프로퍼티의 이름을 규정한다. </p>
-   <p>스타일 시트는 규칙의 목록으로 구성된다. 각 규칙이나 규칙 집합은 하나 이상의 셀렉터와 하나의 선언 블록을 이룬다.</p>
-   <p>CSS는 따로 CSS만의 코드가 필요하지 않고, 그대로 HTML 문서에 CSS의 키워드를 넣으면 된다.</p>
-   </p>
-   </div>
-  </div>
- </div>
-
- <script src="../bootstrap-3.3.2/js/tests/vendor/jquery.min.js"></script>
- <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
-
- <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- <script src="../bootstrap-3.3.2/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
-
- <script src="../offcanvas.js"></script>
+    <h2>CSS 특징<hr></h2>
+    <p>
+     <p>CSS는 <strong>HTML 문서에 있는 요소들에 선택적으로 스타일을 설정할 수 있는 언어</strong>입니다.</p>
+     <p>만약 HTML 페이지에서 &lt;a&gt; 태그가 적용된 모든 하이퍼텍스트를 빨간색으로 변경하려고 한다면 다음과 같이 CSS를 작성하면 됩니다.</p>
+     <div class="highlight">
+      <pre>
+&lt;<font color="#dc143c">style</font>&gt;
+  <font color="#dc143c">a</font> {
+    color:<font color="#f59c00">red</font>;
+  }
+&lt;/<font color="#dc143c">style</font>&gt;</pre>
+      <p>또는 아래와 같이 태그의 속성값으로 작성할 수도 있습니다.</p>
+      <pre>&lt;<font color="#dc143c">a</font> <font color="#f59c00">href</font>=<font color="#28a428">"1.html"</font> <font color="#f59c00">style</font>=<font color="#28a428">"</font>color:<font color="#f59c00">red</font>;<font color="#28a428">"</font>&gt;출력값&lt;/<font color="#dc143c">a</font>&gt;</pre>
+     </div>
+    </p><br>
+    <p>위 예시와 같이 작성할 경우 아래와 같이 페이지에 출력될 겁니다.</p>
+    <img src="css_test_img.png" class="img-responsive" alt="Responsive image"><br>
+    <p>CSS를 사용하여 위와 같이 웹 브라우저에 보이는 HTML 요소들에 스타일을 적용할 수 있습니다.</p><br>
+    <p>CSS의 구조를 'ruleset'이라고 합니다.<br></p>
+    <img src="css_ruleset.png" class="img-responsive" alt="Responsive image"><br>
+    <p>
+     <ul>
+      <li><strong>선택자 (Selector)</strong><br>
+       스타일을 적용하려고 하는 HTML 요소 이름. 다른 요소를 꾸미기 위해서는 선택자를 바꾸거나, 추가하여 사용할 수 있습니다.</li>
+      <li><strong>선언 (Declaration)</strong><br>
+       속성과 속성값으로 구성된 하나의 규칙.</li>
+      <li><strong>속성 (Property)</strong><br>
+       요소에 적용할 옵션의 종류.</li>
+      <li><strong>속성 값 (Property value)</strong><br>
+       HTML 요소에 적용될 속성의 실제 값. 'color: red, blue, black' 등이 될 수 있습니다.</li><br>
+     </ul>
+    </p>
+   </div> <!-- col-sm-9 col-md-10 end -->
+  </div> <!-- row row-offcanvas row-offcanvas-right end-->
+ </div> <!-- container end -->
+<!-- js 선언 -->
+<script src="bootstrap-3.3.2/js/tests/vendor/jquery.min.js"></script>
+<script src="bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.2/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="offcanvas.js"></script>
+<!-- js 선언 end -->
 </body>
 </html>

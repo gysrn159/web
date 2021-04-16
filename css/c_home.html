@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <title>5주차 리포트</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
+ <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <!-- 상단 네비게이션 바 -->
+ <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html">5 weeks Report</a>
+   </div>
+   <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="../html5/h_home.html">HTML5</a></li>
+     <li class="active"><a href="../css/c_home.html">CSS</a></li>
+     <li><a href="../javascript/js_home.html">Javascript</a></li>
+     <li><a href="../jquery/jq_home.html">jQuery</a></li>
+     <li><a href="../bootstrap/bs_home.html">Bootstrap</a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+     <a type="button" class="btn btn-success" href="../login.html">로그인</a>
+     <a type="button" class="btn btn-default" href="../signup.html">회원가입</a>
+    </form>
+   </div> <!-- navbar end -->
+  </div> <!-- container end -->
+ </nav> <!-- 네비게이션 바 end -->
+ <!-- main page -->
+ <div class="container">
+  <div class="row row-offcanvas row-offcanvas-right">
+   <div class="col-sm-3 col-md-2 sidebar">
+    <div class="list-group">
+     <a href="c_home.html" class="list-group-item active">CSS 소개</a>
+     <a href="css_gr.html" class="list-group-item">CSS 문법</a>
+    </div>
+   </div> <!-- 사이드바 end -->
+   <div class="col-sm-9 col-md-10">
+    <h2>CSS란?<hr></h2>
+    <p>
+     CSS(<a href="https://ko.wikipedia.org/wiki/CSS" target="_blank">Cascading Style Sheets</a>)는 HTML과 같은 프로그래밍 언어도, 마크업 언어도 아닙니다. CSS는 HTML 문서에 있는 요소들에 선택적으로 스타일을 적용할 수 있는 '<strong>Style sheet 언어</strong>'입니다.
+    </p>
+    <p>CSS를 사용하지 않고 HTML 문서를 작성하게 될 경우,</p>
+    <div class="highlight">
+     <pre>
+<span class="cp" style="color:gray;">&lt;!doctype html&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">head</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">p</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">p</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">html</span><span class="p">&gt;</span></pre>
+    </div>
+    <p>위 문서는 다음과 같이 출력될 겁니다.</p>
+    <img src="css_html_print.png" class="img-responsive" alt="Responsive image"><br>
+    <p>위 문서는 간단한 문서이기 때문에 &lt;font&gt; 태그로도 충분히 텍스트 스타일을 변경할 수 있지만, 문서의 길이가 길어지고, 코드가 복잡해지고, 바꿔야 할 요소가 많아질수록 변경하는 데 걸리는 시간은 기하급수적으로 증가합니다.</p>
+    <p>이런 문제점들을 해결하기 위해 등장한 것이 바로 'CSS'입니다.</p>
+    <p>HTML 문서의 글자색을 빨간색으로 변경하려고 한다면 기존에는 아래와 같은 방식을 사용했을 것입니다.</p>
+    <div class="highlight">
+     <pre>
+<span class="cp" style="color:gray;">&lt;!doctype html&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">head</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">p</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt" style="color:#dc143c;">font</span> color="red"<span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="p" style="color:#dc143c;">font</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">p</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">html</span><span class="p">&gt;</span></pre>
+    </div><br>
+    <p>그러나 CSS의 등장으로 글자색을 바꾸는 방식은 아래와 같이 변경 되었습니다.</p>
+    <div class="highlight">
+     <pre>
+<span class="cp" style="color:gray;">&lt;!doctype html&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">style</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">style</span><span class="p">&gt;</span>
+  <font color="#dc143c">p</font> {
+   color:<font color="#f59c00">red</font>;
+ }
+ <span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt" style="color:#dc143c;">p</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">p</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt" style="color:#dc143c;">html</span><span class="p">&gt;</span></pre>
+    </div>
+    <p>출력값은 동일하게 'Hello World!'라는 텍스트의 색이 빨간색으로 변경되었을 겁니다.</p><br>
+    <p>짧은 문서라서 크게 체감되지 않지만 변경해야 할 &lt;p&gt; 태그값이 수천, 수만개였다면 엄청난 시간을 단축할 수 있습니다.</p>
+    <p>단편적으로 글자 스타일만을 예로 들었지만 실제로 CSS의 등장으로 손쉽게 HTML 문서에 글꼴, 이미지, 심지어는 페이지 영역까지도 설정할 수 있게 되었습니다.</p>
+   </div> <!-- col-sm-9 col-md-10 end -->
+  </div> <!-- row row-offcanvas row-offcanvas-right end-->
+ </div> <!-- container end -->
+<!-- js 선언 -->
+<script src="bootstrap-3.3.2/js/tests/vendor/jquery.min.js"></script>
+<script src="bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.2/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="offcanvas.js"></script>
+<!-- js 선언 end -->
+</body>
+</html>
