@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <title>5주차 리포트</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
+ <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <!-- 상단 네비게이션 바 -->
+ <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html">5 weeks Report</a>
+   </div>
+   <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+     <li><a href="../index.html">Home</a></li>
+     <li class="active"><a href="../html5/h_home.html">HTML5</a></li>
+     <li><a href="../css/c_home.html">CSS</a></li>
+     <li><a href="../javascript/js_home.html">Javascript</a></li>
+     <li><a href="../jquery/jq_home.html">jQuery</a></li>
+     <li><a href="../bootstrap/bs_home.html">Bootstrap</a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+     <a type="button" class="btn btn-success" href="../login.html">로그인</a>
+     <a type="button" class="btn btn-default" href="../signup.html">회원가입</a>
+    </form>
+   </div> <!-- navbar end -->
+  </div> <!-- container end -->
+ </nav> <!-- 네비게이션 바 end -->
+ <!-- main page -->
+ <div class="container">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <div class="list-group">
+       <a href="h_home.html" class="list-group-item active">HTML 소개</a>
+       <a href="gr.html" class="list-group-item">HTML 기본 문법</a>
+       <a href="tag.html" class="list-group-item">HTML 태그</a>
+       <a href="html5.html" class="list-group-item">HTML5</a>
+     </div> <!-- list-group end -->
+    </div><!-- col-sm-3 col-md-2 sidebar end -->
+   <div class="col-sm-9 col-md-10">
+    <h2>HTML이란?<hr></h2>
+    <strong>HTML</strong>은 <a href="https://ko.wikipedia.org/wiki/HTML" target="_blank" title="HTTML specification">Hypertext Markup Language</a>(하이퍼텍스트 마크업 언어)의 줄임말로, Website를 만드는 <strong>가장 쉬운 언어</strong>입니다.<br>HTML은 프로그래밍 언어가 아닙니다. 컨텐츠의 구조를 정의하는 마크업 언어입니다. HTML은 컨텐츠의 서로 다른 부분들을 씌우거나(wrap) 감싸서(enclose) 다른 형식으로 보이게하거나 특정한 방식으로 동작하도록 하는 일련의 요소(elements)로 이루어져 있습니다. tags로 감싸는 것으로 단어나 이미지를 다른 어딘가로 하이퍼링크(hyperlink)하거나 단어들을 이탤릭체로 표시하고 글씨체를 크게 또는 작게 만드는 등의 일을 할 수 있습니다.<br><br>
+    <h4>HTML 구성</h4>
+    HTML 문서는 HTML 요소(엘리먼트, Elements)와 그들의 속성(Attributes)과 문자 기반 데이터 형태와 문자 참조와 엔티티 참조를 포함하는 몇 가지 핵심 구성 요소로 이루어져 있습니다.<br><br>
+    HTML은 아래와 같이 구성되어 있습니다.<p></p>
+    <p style="text-align:center; color:gray;"><img src="html.png" class="img-responsive" alt="Responsive image">&lt;출처 : <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics#html_%EC%9A%94%EC%86%8C_%EB%B6%84%EC%84%9D" target="_blank" style="color:gray;">Mozilla MDN Web Docs</a>&gt;</p><br>
+    <p>이 요소의 주요 부분은 이렇습니다: <br>
+      <ol>
+        <li><strong>여는 태그(opening tag)</strong>: 이것은 요소의 이름으로 구성되고 (여기에서는 p), 여닫는 꺾쇠괄호로 감싸집니다. 이것은 요소가 시작되는 곳, 또는 효과를 시작하는 곳임을 나타냅니다.</li>
+        <li><strong>닫는 태그(closing tag)</strong>: 이것은 여는 태그와 같지만, 요소의 이름 앞에 전방향 슬래시가 포함된다는 점이 다릅니다. 이것은 요소의 끝을 나타냅니다 — 이 예제에서는 문단이 끝나는 위치를 나타냅니다. 초보자가 가장 흔히 범하는 오류 중 하나가 닫는 태그를 쓰지 않는 것으로 이상한 결과가 표시됩니다.</li>
+        <li><strong>컨텐츠(content)</strong>: 이것은 요소의 내용(content)으로 이 예제에서는 그냥 텍스트입니다.</li>
+        <li><strong>요소(element)</strong>: 요소는 여는 태그와 닫는 태그, 그리고 컨텐츠로 이루어집니다.</li><br><br>
+      </ol>
+      <p>또한 다음과 같이 요소에 속성을 가질 수도 있습니다.</p>
+      <p style="text-align:center; color:gray;"><img src="html2.png" class="img-responsive" alt="Responsive image">&lt;출처 : <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics#html_%EC%9A%94%EC%86%8C_%EB%B6%84%EC%84%9D" target="_blank" style="color:gray;">Mozilla MDN Web Docs</a>&gt;</p><br>
+      <p>속성은 실제 컨텐츠로 표시되길 원하지 않는 추가적인 정보를 담고 있습니다. 이 예제에서, class 속성을 이용해 나중에 해당 요소를 특정해 스타일이나 다른 정보를 설정할 때 사용할 수 있는 식별자를 지정할 수 있습니다.</p><br>
+      <p><strong>속성이 항상 가져야 하는 것</strong>:</p>
+      <ol>
+        <li>요소 이름 (또는 요소가 하나 이상 속성을 이미 가지고 있다면 이전 속성)과 속성 사이에 공백이 있어야 합니다.</li>
+        <li>속성 이름 뒤에는 등호(=)가 와야 합니다.</li>
+        <li>속성 값의 앞 뒤에 열고 닫는 인용부호(" 또는 ')가 있어야 합니다.</li>
+      </ol>
+   </div> <!-- col-sm-9 col-md-10 end -->
+  </div> <!-- row end-->
+ </div> <!-- container end -->
+ <!-- main page end -->
+
+ <!-- js 선언 -->
+ <script src="../bootstrap-3.3.2/js/tests/vendor/jquery.min.js"></script>
+ <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+ <script src="../bootstrap-3.3.2/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+ <script src="../offcanvas.js"></script>
+ <!-- js 선언 end -->
+</body>
+</html>

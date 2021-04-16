@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>5주차 리포트</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap.min.css">
-<!-- 부가적인 테마 -->
-<link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
-<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-<script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+ <title>5주차 리포트</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../bootstrap-3.3.2/dist/css/bootstrap-theme.min.css">
+ <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <!-- Static navbar -->
-  <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">5 weeks Report</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="../index.html">Home</a></li>
-          <li class="active"><a href="../html5/1.html">HTML5</a></li>
-          <li><a href="../css/2.html">CSS</a></li>
-          <li><a href="../javaScript/3.html">Javascript</a></li>
-          <li><a href="../jquery/4.html">jQuery</a></li>
-          <li><a href="../bootstrap/5.html">Bootstrap</a></li>
-        </ul>
-        <form class="navbar-form navbar-right">
-          <a type="button" class="btn btn-success" href="../login.html">로그인</a>
-          <a type="button" class="btn btn-default" href="../signup.html">회원가입</a>
-        </form>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
-
+ <!-- 상단 네비게이션 바 -->
+ <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html">5 weeks Report</a>
+   </div>
+   <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+     <li><a href="../index.html">Home</a></li>
+     <li class="active"><a href="../html5/h_home.html">HTML5</a></li>
+     <li><a href="../css/c_home.html">CSS</a></li>
+     <li><a href="../javaScript/js_home.html">Javascript</a></li>
+     <li><a href="../jquery/jq_home.html">jQuery</a></li>
+     <li><a href="../bootstrap/bs_home.html">Bootstrap</a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+     <a type="button" class="btn btn-success" href="../login.html">로그인</a>
+     <a type="button" class="btn btn-default" href="../signup.html">회원가입</a>
+    </form>
+  </div> <!--  -->
+ </div> <!-- container end -->
+</nav> <!-- 네비게이션 바 end -->
+ <!-- main page -->
  <div class="container">
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-sm-3 col-md-2 sidebar">
       <div class="list-group">
-       <a href="1.html" class="list-group-item">HTML 소개</a>
+       <a href="h_home.html" class="list-group-item">HTML 소개</a>
        <a href="gr.html" class="list-group-item">HTML 기본 문법</a>
        <a href="tag.html" class="list-group-item active">HTML 태그</a>
        <a href="html5.html" class="list-group-item">HTML5</a>
@@ -53,26 +50,106 @@
     </div><!--/.sidebar-offcanvas-->
    <div class="col-sm-9 col-md-10">
     <!-- main page -->
-    <h2>HTML 태그</h2><p></p>
-    <p>
-    <h4>HTML 태그 간단 소개</h4>
+    <h2>HTML 태그<hr></h2>
+    <h3>HTML 태그 간단 소개<br><br></h3>
     <ul>
-     <li>태그(tag) : </li>
-      <ul>
-       <li>종류 : </li>
-     </ul><p></p>
+     <li><h4>태그(tag)란<br></h4>
+      태그는 <strong>꺾쇠괄호(<>)</strong> 안에 둘러싸인 키워드이다. 꺾쇠괄호(<>) 안에 들어간 속성값에 따라 태그의 기능이 나뉩니다.
+     </li><br>
+     <li><h4>HTML 태그 기본 형식<br></h4>
+      <p>HTML 요소는 <strong>여는 태그</strong>와 <strong>닫는 태그</strong> 사이에 출력될 내용을 포함하고 있으며, 태그값에 따라 출력될 내용의 형태가 달라집니다.</p>
+      <div class="highlight">
+       <pre> <span class="cp">&lt;tag&gt;출력값&lt;/tag&gt;</span></pre>
+      </div>
+     </li><br>
+     <li><h4>주요 태그<br></h4>
+      <div class="table-responsive">
+       <table class="table table-bordered table-striped">
+        <thead>
+         <tr>
+          <th><center>번호</center></th>
+          <th><center>속성</center></th>
+          <th><center>설명</center></th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <th scope="row"><center>1</center></th>
+          <td><center>&lt;html&gt;</center></td>
+          <td>웹페이지의 시작과 끝.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>2</center></th>
+          <td><center>&lt;head&gt;</center></td>
+          <td>&lt;title&gt;, &lt;meta&gt; 등 웹 페이지의 정보, 외부 파일 링크 등을 정의.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>3</center></th>
+          <td><center>&lt;body&gt;</center></td>
+          <td>웹브라우저에 출력되는 내용.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>4</center></th>
+          <td><center>&lt;title&gt;</center></td>
+          <td>문서 제목 설정.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>5</center></th>
+          <td><center>&lt;meta&gt;</center></td>
+          <td>문서의 인코딩 정보를 정의.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>6</center></th>
+          <td><center>&lt;script&gt;</center></td>
+          <td>script 코드 삽입. 주로 Javascript 코드를 넣을 때 사용.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>7</center></th>
+          <td><center>&lt;div&gt;,<br>&lt;span&gt;</center></td>
+          <td>요소들을 묶을 때 사용.<br>&nbsp;&nbsp;ㄴ &lt;div&gt; - 블록 라인 요소(줄바꿈 O), &lt;span&gt; - 인라인 요소(줄바꿈 X).</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>8</center></th>
+          <td><center>&lt;a&gt;</center></td>
+          <td>하이퍼링크를 지정할 때 사용.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>9</center></th>
+          <td><center>&lt;br&gt;</center></td>
+          <td>줄바꿈 태그.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>10</center></th>
+          <td><center>&lt;p&gt;</center></td>
+          <td>단락을 구분 짓는 태그.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>11</center></th>
+          <td><center>&lt;ul&gt;,<br>&lt;ol&gt;</center></td>
+          <td>리스트 정렬.리스트 정렬.<br>
+            &nbsp;&nbsp;ㄴ &lt;ul&gt; : unordered list, 순서가 없는 리스트.<br>
+            &nbsp;&nbsp;ㄴ &lt;ol&gt; : ordered list, 순서가 있는 리스트.</td>
+         </tr>
+         <tr>
+          <th scope="row"><center>12</center></th>
+          <td><center>&lt;li&gt;</center></td>
+          <td>&lt;ul&gt;, &lt;ol&gt;의 항목을 나열할 때 사용.</td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </li>
     </ul>
-    </p>
-   </div>
+   </div> <!-- col-sm-9 col-md-10 end -->
   </div> <!-- row end-->
  </div> <!-- container end -->
+ <!-- main page end -->
 
+<!-- js 선언 -->
  <script src="../bootstrap-3.3.2/js/tests/vendor/jquery.min.js"></script>
  <script src="../bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
-
- <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  <script src="../bootstrap-3.3.2/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
-
  <script src="../offcanvas.js"></script>
+ <!-- js 선언 end -->
 </body>
 </html>
